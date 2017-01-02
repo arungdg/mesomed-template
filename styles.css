@@ -10,7 +10,7 @@ header {
     background-color: #4696e5;
     color: #d0e4f8;
     padding: 4.5em 0 2.5em 0;
-    text-align: right;
+    text-align: center;
     background-image: url("overlay.png"), url("pattern-size1.svg");
     background-position: top left, center center;
     background-attachment: fixed, fixed;
@@ -23,9 +23,9 @@ header {
     background-color: #4696e5;
     color: #d0e4f8;
     padding: 4.5em 0 2.5em 0;
-    text-align: right;
+    text-align: center;
     font-weight: 900;
-    justify-content: right;
+    justify-content: center;
     background-image: url("overlay.png"), url("pattern-size1.svg");
     background-position: top left, center center;
     background-attachment: fixed, fixed;
@@ -33,8 +33,8 @@ header {
 }
 
 #phone {
-    padding: 0 0 0 0;
     font-weight: normal;
+    text-indent: 2px;
 }
 
 #selected-button1 {
