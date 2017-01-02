@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MeSoMeds</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- To create a modal-window -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://use.fontawesome.com/97829cb060.js"></script>
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="jumbotron">
+                        <h1><a href="#"><b>Mesomeds</b></a>
+                        </h1>
+                        <p>Order Meds, at your ease<br> You focus on healing, we do the running <a href="https://www.mesomeds.com" target="_blank"> Mesomeds</a></p>
+                        <form>
+                            <div class="row">
+                                <div class="form-group" id="phone">
+                                    <label>Enter your mobile number :</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter your number">
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" id="selected-button1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-modal-window"></span> Place order</button>
+                        <a href="#myIndex"><button type="button" id="selected-button2"><span class="glyphicon glyphicon-chevron-down"></span> Learn more</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Fill in the details below: </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-envelope"></span> Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                            <div class="from-group">
+                                <label> <span class="glyphicon glyphicon-folder-open"></span> Upload prescription: </label> <input type="file" id="myFile" name="usr_file" required multiple>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label><span class="glyphicon glyphicon-edit"></span> Enter manually:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" checked> I agree to the <a href="#" style="color: #4696e5;">Terms and Conditions.</a> </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-default">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="myIndex">
+        <div class="container">
+            <h2>This is a breif introduction to Mesomeds.<br> Get medicines at the convenience of your home.</h2>
+            <br>
+            <ul>
+                <li><span class="glyphicon glyphicon-camera"></span></li>
+                <li><span class="glyphicon glyphicon-refresh"></span></li>
+                <li><span class="glyphicon glyphicon-cloud"></span></li>
+            </ul>
+        </div>
+    </section>
+    <hr style="width:100%; margin: 0px;">
+    <section id="newBg">
+        <div class="container">
+            <img src="a.jpg" class="img-circle" alt="Loading..." height="250" width="250" />
+            <h4>
+                This is some text. This is some text. This is some text. This is some text. This is some text.
+                <br> This is some text. This is some text. This is some text. This is some text. This is some text.
+                <br> This is some text. This is some text. This is some text. This is some text. This is some text.
+            </h4>
+        </div>
+        <hr>
+        <div class="container">
+            <img src="a.jpg" style="float: right;" class="img-circle" alt="Loading..." height="250" width="250" />
+            <h4>
+                This is some text. This is some text. This is some text. This is some text. This is some text.
+                <br> This is some text. This is some text. This is some text. This is some text. This is some text.
+                <br> This is some text. This is some text. This is some text. This is some text. This is some text.
+            </h4>
+        </div>
+        <hr>
+        <div class="container">
+            <img src="a.jpg" class="img-circle" alt="Loading..." height="250" width="250" />
+            <h4>
+                This is some text. This is some text. This is some text. This is some text. This is some text.
+                <br> This is some text. This is some text. This is some text. This is some text. This is some text.
+                <br> This is some text. This is some text. This is some text. This is some text. This is some text.
+            </h4>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-camera" id="newGlyph"></span>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-refresh" id="newGlyph"></span>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-cloud" id="newGlyph"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="glyphicon glyphicon-film" id="newGlyph2"></span>
+                </div>
+                <div class="col-sm-6">
+                    <span class="glyphicon glyphicon-home" id="newGlyph2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="width:100%; margin: 0px;">
+    <section>
+        <div class="container">
+            <h2>This is a breif introduction to Mesomeds.<br> Get medicines at the convenience of your home.</h2>
+            <br>
+            <button type="button" id="selected-button2" style="color: #FFFFFF;" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-modal-window"></span> Place order</button>
+            <a href="#myIndex"><button type="button" id="selected-button1"> Learn more</button></a>
+        </div>
+    </section>
+    <hr style="width:100%; margin: 0px;">
+    <footer>
+        <a href="https://www.facebook.com"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+        <a href="https://twitter.com"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="https://github.com"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        <br>
+        <br> Copyright &copy; <a href="http://www.awnics.com" style="color: #2196F3;" target="_blank">Awnics</a> 2016
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
