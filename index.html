@@ -29,36 +29,28 @@
 <body>
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="jumbotron">
-                        <h1><a href="#"><b>Mesomeds</b></a>
-                        </h1>
-                        <p>Order Meds, at your ease<br> You focus on healing, we do the running <a href="https://www.mesomeds.com" target="_blank"> Mesomeds</a></p>
-                        <form>
-                            <div class="form-group" id="phone">
-                                <div class="row">
-                                    <div class="col-xs-4"></div>
-                                    <div class="col-xs-4"></div>
-                                    <div class="col-xs-4">
-                                        <label>Enter your mobile number:</label>
-                                        <input type="tel" class="form-control" id="phone" placeholder="+91 xxxxxxxxxx">
-                                    </div>
+            <div class="jumbotron" id="header">
+                <h1><a href="#"><b>Mesomeds</b></a></h1>
+                <p>Order Meds, at your ease<br> You focus on healing, we do the running <a href="https://www.mesomeds.com" target="_blank"> Mesomeds</a></p>
+                <div class="container">
+                    <form>
+                        <div class="form-group" id="phone">
+                            <div class="col-xs-4"></div>
+                                <div class="col-xs-4">
+                                    <input class="form-control" id="ex1" type="tel" placeholder="Enter your mobile number">
                                 </div>
                             </div>
-                        </form>
-                        <button type="button" id="selected-button1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-modal-window"></span> Place order</button>
-                        <a href="#myIndex"><button type="button" id="selected-button2"><span class="glyphicon glyphicon-chevron-down"></span> Learn more</button></a>
-                    </div>
+                     </form>
                 </div>
+                <button type="button" id="selected-button1" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-modal-window"></span> Place order</button>
+                <a href="#myIndex"><button type="button" id="selected-button2"><span class="glyphicon glyphicon-chevron-down"></span> Learn more</button></a>
             </div>
-        </div>
         </div>
     </header>
     <div class="container">
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-sm">
+            <div class="modal-dialog modal-md">
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
@@ -66,9 +58,37 @@
                         <h4 class="modal-title">Fill in the details below: </h4>
                     </div>
                     <div class="modal-body">
-                        <form>
+                          <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#demo1">Enter OTP</button>
+                          <div id="demo1" class="collapse">
+                          <form>
+                              <div class="form-group">
+                              <br>
+                                <input type="text" class="form-control" name="otp" placeholder="Enter OTP">
+                                <button type="button" id="selected-button3">Verify</button>
+                              </div>
+                          </form>
+                          </div><br>
+                          <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#demo2">Request callback</button>
+                          <div id="demo2" class="collapse">
+                          <form>
+                              <div class="form-group">
+                              <br>
+                                <input type="tel" class="form-control" name="tel" placeholder="Enter mobile number">
+                                <button type="button" id="selected-button3">Request call back</button>
+                              </div>
+                          </form>
+                          </div>
+                          <p style="text-align: center; margin: 4px;">Or</p>
+                          <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#demo3">Enter details</button>
+                          <div id="demo3" class="collapse">
+                          <form><br>
                             <div class="form-group">
-                                <label><span class="glyphicon glyphicon-envelope"></span> Email:</label>
+                                <input type="text" class="form-control" id="tel" placeholder="Full name">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="tel" placeholder="Phone/WhatsApp">
+                            </div>
+                            <div class="form-group">
                                 <input type="email" class="form-control" id="email" placeholder="Enter email">
                             </div>
                             <div class="from-group">
@@ -82,10 +102,12 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" value="" checked> I agree to the <a href="#" style="color: #4696e5;">Terms and Conditions.</a> </label>
                             </div>
+                            <button type="submit" id="selected-button3">Submit</button>
+                            <button type="reset" id="selected-button3">Reset</button>
                         </form>
+                          </div>
                     </div>
                     <div class="modal-footer">
-                        <input type="submit" class="btn btn-default">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -109,7 +131,6 @@
             <img src="a.jpg" class="img-circle" alt="Loading..." height="250" width="250" />
             <h4>
                 This is some text. This is some text. This is some text. This is some text. This is some text.
-                <br> This is some text. This is some text. This is some text. This is some text. This is some text.
                 <br> This is some text. This is some text. This is some text. This is some text. This is some text.
                 <br> This is some text. This is some text. This is some text. This is some text. This is some text.
             </h4>
@@ -163,7 +184,7 @@
             <h2>This is a breif introduction to Mesomeds.<br> Get medicines at the convenience of your home.</h2>
             <br>
             <button type="button" id="selected-button2" style="color: #FFFFFF;" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-modal-window"></span> Place order</button>
-            <a href="#myIndex"><button type="button" id="selected-button1"> Learn more</button></a>
+            <a href="#myIndex"><button type="button" id="selected-button1"><span class="glyphicon glyphicon-chevron-up"></span> Learn more</button></a>
         </div>
     </section>
     <hr style="width:100%; margin: 0px;">
@@ -172,6 +193,7 @@
         <a href="https://twitter.com"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
         <a href="https://github.com"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
         <br>
+        <a href="#header" data-spy="affix" data-offset-top="250"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true" style="color: #4696e5;"></i></a>
         <br> Copyright &copy; <a href="http://www.awnics.com" style="color: #2196F3;" target="_blank">Awnics</a> 2016
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -10,7 +10,7 @@ header {
     background-color: #4696e5;
     color: #d0e4f8;
     padding: 4.5em 0 2.5em 0;
-    text-align: right;
+    text-align: center;
     background-image: url("overlay.png"), url("pattern-size1.svg");
     background-position: top left, center center;
     background-attachment: fixed, fixed;
@@ -23,9 +23,9 @@ header {
     background-color: #4696e5;
     color: #d0e4f8;
     padding: 4.5em 0 2.5em 0;
-    text-align: right;
+    text-align: center;
     font-weight: 900;
-    justify-content: right;
+    justify-content: center;
     background-image: url("overlay.png"), url("pattern-size1.svg");
     background-position: top left, center center;
     background-attachment: fixed, fixed;
@@ -33,15 +33,15 @@ header {
 }
 
 #phone {
-    padding: 0 0 0 0;
     font-weight: normal;
-    text-indent: 4px;
+    text-indent: 2px;
+    margin-bottom: 10px;
 }
 
 #selected-button1 {
     background-color: #FFFFFF;
     color: #4696e5;
-    margin: 10px 0px 10px 10px;
+    margin: 20px 10px 0px 0px;
     padding: 10px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -53,7 +53,7 @@ header {
 #selected-button2 {
     background-color: #4696e5;
     color: #d0e4f8;
-    margin: 10px 0px 10px 10px;
+    margin: 20px 10px 0px 0px;
     padding: 10px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -64,14 +64,15 @@ header {
 }
 
 #selected-button3 {
-    background-color: #FFFFFF;
-    color: #4696e5;
-    padding: 5px 10px;
+    background-color: #4696e5;
+    color: #FFFFFF;
+    margin: 10px 0px 0px 0px;
+    padding: 4px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     border: 1.5px solid #d0e4f8;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 li {
@@ -149,7 +150,7 @@ img {
     margin: 10px;
 }
 
-#headerImg {
-    height: 300px;
-    width: 200px;
-}
+.affix {
+    right: 20px;
+    bottom: 20px;
+  }
