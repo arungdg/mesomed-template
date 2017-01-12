@@ -10,8 +10,3 @@ $('a[href*="#"]:not([href="#"])').click(function() {
         }
     }
 });
-
-function confirmElement() {
-    document.getElementById("demo2").style.display = "block";
-    document.getElementById("demo2").style.visibility = "visible";
-}
